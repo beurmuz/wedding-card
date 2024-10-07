@@ -1,0 +1,23 @@
+.dimmed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 9999;
+
+  .ico-close {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .ico-close:hover {
+    cursor: pointer;
+  }
+}

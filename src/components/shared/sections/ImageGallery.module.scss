@@ -1,0 +1,26 @@
+.wrap-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+
+  .wrap-image {
+    width: 100%;
+    position: relative;
+
+    // 가상선택자로 영역 만들기
+    &::after {
+      display: block;
+      content: '';
+      padding-bottom: 100%; // image 비율을 정함. 100%는 1:1
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}
