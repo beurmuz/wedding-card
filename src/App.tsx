@@ -10,8 +10,9 @@ import Video from '@shared/sections/Video'
 import { Wedding } from '@models/wedding'
 import ImageGallery from '@shared/sections/ImageGallery'
 import Intro from '@shared/sections/Intro'
-import Invitation from './components/shared/sections/Invitation'
-import Calendar from './components/shared/sections/Calendar'
+import Invitation from '@shared/sections/Invitation'
+import Calendar from '@shared/sections/Calendar'
+import Map from '@shared/sections/Map'
 
 const cx = classNames.bind(styles)
 
@@ -80,6 +81,7 @@ function App() {
       <Invitation message={invitation} />
       <ImageGallery images={galleryImages} />
       <Calendar date={date} />
+      <Map location={location} />
       {/* {JSON.stringify(wedding)} */}
     </div>
   )
