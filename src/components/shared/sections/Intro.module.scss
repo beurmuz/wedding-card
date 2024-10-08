@@ -1,0 +1,36 @@
+@import '@scss/utils.scss';
+
+.container {
+  @include txt-content;
+  //   text-align: center;
+  //   line-height: 26px;
+
+  .wrap-person {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+    margin: 42px 0 8px;
+
+    .ico-heart {
+      fill: var(--red);
+      width: 24px;
+      height: 30px;
+      margin: 0 10px;
+    }
+  }
+
+  .ico-flower {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 6px;
+  }
+
+  .wrap-location {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}

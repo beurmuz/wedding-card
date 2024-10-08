@@ -1,0 +1,13 @@
+@import '@scss/utils.scss';
+
+.container {
+  @include txt-content;
+  //   text-align: center;
+  //   line-height: 26px;
+
+  .ico-post {
+    width: 30px;
+    height: 30px;
+    margin: 72px 0 8px;
+  }
+}

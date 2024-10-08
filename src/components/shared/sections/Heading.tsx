@@ -1,4 +1,4 @@
-import { parseISO, format, getDay } from 'date-fns'
+import { parseISO, format } from 'date-fns'
 import classNames from 'classnames/bind'
 import styles from './Heading.module.scss'
 
