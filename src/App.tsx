@@ -4,15 +4,16 @@ import { useEffect, useState } from 'react'
 import styles from './App.module.scss'
 
 import FullScreenMessage from '@shared/FullScreenMessage'
-import Heading from '@shared/sections/Heading'
-import Video from '@shared/sections/Video'
+import Heading from '@components/sections/Heading'
+import Video from '@components/sections/Video'
 
 import { Wedding } from '@models/wedding'
-import ImageGallery from '@shared/sections/ImageGallery'
-import Intro from '@shared/sections/Intro'
-import Invitation from '@shared/sections/Invitation'
-import Calendar from '@shared/sections/Calendar'
-import Map from '@shared/sections/Map'
+import ImageGallery from '@components/sections/ImageGallery'
+import Intro from '@components/sections/Intro'
+import Invitation from '@components/sections/Invitation'
+import Calendar from '@components/sections/Calendar'
+import Map from '@components/sections/Map'
+import Contact from '@components/sections/Contact'
 
 const cx = classNames.bind(styles)
 
@@ -82,6 +83,7 @@ function App() {
       <ImageGallery images={galleryImages} />
       <Calendar date={date} />
       <Map location={location} />
+      <Contact groom={groom} bride={bride} />
       {/* {JSON.stringify(wedding)} */}
     </div>
   )

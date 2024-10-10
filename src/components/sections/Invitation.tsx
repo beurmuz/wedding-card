@@ -1,7 +1,7 @@
 import styles from './Invitation.module.scss'
 import classNames from 'classnames/bind'
-import Section from '../Section'
-import Text from '../Text'
+import Section from '@shared/Section'
+import Text from '@shared/Text'
 
 const cx = classNames.bind(styles)
 
